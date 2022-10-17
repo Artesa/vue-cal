@@ -1,5 +1,5 @@
 {
-  "name": "vue-cal",
+  "name": "@artesa/vue-cal",
   "version": "4.8.0",
   "description": "A Vue JS full calendar, no dependency, no BS. :metal:",
   "author": "Antoni Andre <antoniandre.web@gmail.com>",
