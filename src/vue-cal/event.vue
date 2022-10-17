@@ -41,7 +41,7 @@ export default {
     // one starting first to the last. (See utils/event.js > checkCellOverlappingEvents)
     eventPosition: { type: Number, default: 0 },
     overlapsStreak: { type: Number, default: 0 },
-    allDay: { type: Boolean, default: false } // Is the event displayed in the all-day bar.
+    allDay: { type: Boolean, default: false }, // Is the event displayed in the all-day bar.
   },
 
   data: () => ({
@@ -212,7 +212,7 @@ export default {
       minutesFromTop = Math.min(endTimeMinutes, this.vuecal.timeTo) - this.vuecal.timeFrom
       const bottom = Math.round(minutesFromTop * this.vuecal.timeCellHeight / this.vuecal.timeStep)
 
-      const height = Math.max(bottom - top, 5) // Min height is 5px.
+      const height = Math.max(bottom - top, this.vuecal.minEventHeight) // Min height is 5px.
 
       return { top, height }
     },

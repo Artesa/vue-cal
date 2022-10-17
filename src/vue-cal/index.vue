@@ -229,6 +229,7 @@ export default {
     minCellWidth: { type: Number, default: 0 },
     minDate: { type: [String, Date], default: '' },
     minEventWidth: { type: Number, default: 0 },
+    minEventHeight: { type: Number, default: 5 },
     minSplitWidth: { type: Number, default: 0 },
     onEventClick: { type: [Function, null], default: null },
     onEventCreate: { type: [Function, null], default: null },
